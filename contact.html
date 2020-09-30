@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript">
+      function my(){
+        alert("sucessfully submitted");
+      }
+    </script>
+    <style type="text/css">
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: white;
+}
+
+.active {
+  background-color: grey;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
+    </head>
+<body>
+	<ul>
+  <li><a  style="text-decoration : none;"href="home.html">Home</a></li>
+  <li><a style="text-decoration : none;"href="About.html">About</a></li>
+  <li style="float:right"><a style="text-decoration : none;"class="active" href="index.html">PayRoll</a></li>
+</ul><br>
+<h3 style="text-align: center;">Contact Us!</h3><br>
+
+<div class="card mx-auto shadow p-3 mb-5 bg-white rounded" style="width: 25rem;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" style="text-align: center;">
+  <div class="card-body">
+      <form style="text-align: center;" required>
+  <label >First name:</label>
+  <input type="text" id="fname" name="fname" required><br><br>
+  <label for="lname">last name:</label>
+  <input type="text" id="lname" name="lname" required><br><br>
+  <label>place:</label>
+  <input type="text" id="mytext" required><br><br>
+  <label>subject</label>
+  <input type="text" id="p" required><br><br>
+  <input type="submit" onclick="my()">
+  </form>
+  </div>
+</div>
+
+</body>
+</html>
